@@ -1,5 +1,5 @@
 theme = "hugo-coder"
-baseURL = "https://pete-jones.onrender.com/"
+baseURL = "https://petejon.es/"
 builddrafts = true
 canonifyurls = true
 contentdir = "content"
