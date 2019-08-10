@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pete Jones</title>
+    <link>https://petejon.es/</link>
+    <description>Recent content on Pete Jones</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 10 Aug 2019 22:49:10 +0100</lastBuildDate>
+    
+	<atom:link href="https://petejon.es/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Research</title>
+      <link>https://petejon.es/research/</link>
+      <pubDate>Sat, 10 Aug 2019 22:49:10 +0100</pubDate>
+      
+      <guid>https://petejon.es/research/</guid>
+      <description>Current projects I am currently finishing a PhD at the University of Manchester. My thesis is titled &amp;ldquo;A social network analysis approach to examining gendered character positions in popular film narratives&amp;rdquo;. For more info and to take a look at the data and notebooks, check out the project repository.
+Publications Jones, Pete. 2018. &amp;ldquo;Diana in the World of Men: a character network approach to analysing gendered vocal representation in Wonder Woman.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://petejon.es/contact/</link>
+      <pubDate>Sat, 10 Aug 2019 16:40:14 +0100</pubDate>
+      
+      <guid>https://petejon.es/contact/</guid>
+      <description> Get in touch:    E-mail Github Goodreads Letterboxd LinkedIn ResearchGate Twitter               </description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://petejon.es/about/</link>
+      <pubDate>Sat, 10 Aug 2019 15:50:17 +0100</pubDate>
+      
+      <guid>https://petejon.es/about/</guid>
+      <description>Bio I&amp;rsquo;m a quantitatively trained social scientist currently finishing up a PhD at the University of Manchester. My research explores what the relational perspectives and tools of social network analysis can add to our understanding of the narrative marginalisation of women in popular Hollywood cinema.
+Education Prior to my PhD, I completed an MSc in Social Research Methods and Statistics and a BA in Social Sciences, both at the University of Manchester.</description>
+    </item>
+    
+    <item>
+      <title>License</title>
+      <link>https://petejon.es/license/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://petejon.es/license/</guid>
+      <description>Attribution-ShareAlike 4.0 International Creative Commons Corporation (&amp;ldquo;Creative Commons&amp;rdquo;) is not a law firm and does not provide legal services or legal advice. Distribution of Creative Commons public licenses does not create a lawyer-client or other relationship. Creative Commons makes its licenses and related information available on an &amp;ldquo;as-is&amp;rdquo; basis. Creative Commons gives no warranties regarding its licenses, any material licensed under their terms and conditions, or any related information. Creative Commons disclaims all liability for damages resulting from their use to the fullest extent possible.</description>
+    </item>
+    
+  </channel>
+</rss>
