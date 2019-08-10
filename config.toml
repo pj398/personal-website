@@ -1,0 +1,88 @@
+theme = "hugo-coder"
+baseURL = "https://petejon.es"
+builddrafts = true
+canonifyurls = true
+contentdir = "content"
+languageCode = "en-US"
+layoutdir = "layouts"
+publishdir = "public"
+author = "Pete Jones"
+title = "Pete Jones"
+disqusshortname = ""
+pluralizelisttitles = false
+
+[blackfriday]
+	fractions = false
+
+[params]
+    author = "Pete Jones"
+    info = "Social science PhD mostly studying fictional characters instead of real people"
+    description = "Pete Jones"
+    keywords = "blog,academic,personal"
+    avatarurl = "img/pj.PNG"
+
+    favicon_32 = "img/icon.png"
+    favicon_16 = "img/icon.png"
+
+    hidecredits = false
+    hidecopyright = false
+	rtl = false
+    math = true
+
+# Social links
+[[params.social]]
+    name = "E-mail"
+    icon = "fas fa-envelope"
+    weight = 1
+    url = "mailto:petejones398@gmail.com"
+	
+[[params.social]]
+    name = "Twitter"
+    icon = "fab fa-twitter"
+    weight = 2
+    url = "https://twitter.com/pj_mcr"
+	
+[[params.social]]
+    name = "Github"
+    icon = "fab fa-github"
+    weight = 3
+    url = "https://github.com/pj398/"
+
+[[params.social]]
+    name = "Goodreads"
+    icon = "fab fa-goodreads"
+    weight = 4
+    url = "https://www.goodreads.com/user/show/38789704-pj"
+	
+[[params.social]]
+    name = "LinkedIn"
+    icon = "fab fa-linkedin"
+    weight = 5
+    url = "https://www.linkedin.com/in/pete-jones-13b955105"
+
+[[params.social]]
+    name = "ResearchGate"
+    icon = "fab fa-researchgate"
+    weight = 6
+    url = "https://researchgate.net/profile/Pete_Jones6"
+	
+# Menu links
+[[menu.main]]
+    name = "Home"
+    weight = 1
+    url  = "/"
+
+[[menu.main]]
+    name = "About"
+    weight = 2
+    url  = "/about/"
+	
+[[menu.main]]
+    name = "Research"
+    weight = 3
+    url  = "/research/"
+	
+[[menu.main]]
+    name = "Contact"
+    weight = 4
+    url  = "/contact/"	
