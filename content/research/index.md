@@ -4,7 +4,7 @@ date: 2019-08-10T22:49:10+01:00
 ---
 ### Current projects
 
-I am currently finishing a PhD at the University of Manchester. My thesis is titled "A social network analysis approach to examining gendered character positions in popular film narratives". For more info and to take a look at the data and notebooks, check out the [project repository](https://github.com/pj398/between-the-lines).
+I recently submitted my PhD at the University of Manchester. The thesis is titled "A social network analysis approach to examining gendered character positions in popular film narratives". For more info and to take a look at the data and notebooks, check out the [project repository](https://github.com/pj398/between-the-lines).
 
 ### Publications
 
@@ -25,6 +25,6 @@ I am a member of the following groups and organisations:
 - The Mitchell Centre for Social Network Analysis ([website](https://www.socialsciences.manchester.ac.uk/mitchell-centre/))
 - Cathie Marsh Institute for Social Research ([CMI](https://www.cmi.manchester.ac.uk/))
 - International Network of Social Network Analysts ([INSNA](https://www.insna.org))
-- Media Communications and Cultural Studies Association ([MeCCSA](https://www.meccsa.org.uk))
+- Media, Communications and Cultural Studies Association ([MeCCSA](https://www.meccsa.org.uk))
 - British Sociological Association ([BSA](https://www.britsoc.co.uk))
 - British Association for American Studies ([BAAS](https://www.baas.ac.uk))
