@@ -4,7 +4,7 @@ date: 2019-08-10T15:50:17+01:00
 ---
 ### Bio
 
-I'm a quantitatively trained social scientist currently at the University of Melbourne as a visiting researcher having recently submitted my PhD thesis at the University of Manchester. My research explores what the relational perspectives and tools of social network analysis can add to our understanding of the narrative marginalisation of women in popular Hollywood cinema.
+I’m a quantitatively trained social scientist currently seeking postdoctoral opportunities having recently completed my PhD at the University of Manchester. My research explores what the relational perspectives and tools of social network analysis can add to our understanding of the narrative marginalisation of women in popular Hollywood cinema.
 
 ### Education
 

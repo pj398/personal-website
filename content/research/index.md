@@ -4,7 +4,7 @@ date: 2019-08-10T22:49:10+01:00
 ---
 ### Current projects
 
-I recently submitted my PhD at the University of Manchester. The thesis is titled "A social network analysis approach to examining gendered character positions in popular film narratives". For more info and to take a look at the data and notebooks, check out the [project repository](https://github.com/pj398/between-the-lines).
+I recently completed my PhD at the University of Manchester. The thesis is titled "A social network analysis approach to examining gendered character positions in popular film narratives". For more info and to take a look at the data and notebooks, check out the [project repository](https://github.com/pj398/between-the-lines).
 
 ### Publications
 
