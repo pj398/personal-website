@@ -1,5 +1,5 @@
 theme = "hugo-coder"
-baseURL = "https://petejon.es/"
+baseURL = "https://agitated-newton-bf467c.netlify.com/"
 builddrafts = true
 canonifyurls = true
 contentdir = "content"
