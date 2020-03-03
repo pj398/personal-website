@@ -86,3 +86,8 @@ pluralizelisttitles = false
     name = "Contact"
     weight = 4
     url  = "/contact/"	
+
+[[menu.main]]
+    name = "Blog"
+    weight = 5
+    url  = "/posts/"	
