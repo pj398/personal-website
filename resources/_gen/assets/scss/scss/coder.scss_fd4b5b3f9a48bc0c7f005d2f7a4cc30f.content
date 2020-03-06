@@ -8,11 +8,11 @@ html {
   font-size: 62.5%; }
 
 body {
-  color: #212121;
-  background-color: #FAFAFA;
-  font-family: Merriweather, Georgia, serif;
-  font-size: 1.6em;
-  font-weight: 300;
+  color: #000000;
+  background-color: #fffbfb;
+  font-family: "Raleway", Georgia, serif;
+  font-size: 1.8em;
+  font-weight: 400;
   line-height: 1.8em; }
   @media only screen and (max-width: 768px) {
     body {
@@ -35,10 +35,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Lato, Helvetica, sans-serif;
-  font-weight: 700;
+  font-family: "Raleway", Helvetica, serif;
+  font-weight: 500;
   color: #000;
-  margin: 6.4rem 0 3.2rem 0; }
+  margin: 2.0rem 0 2.0rem 0; }
 
 h1 {
   font-size: 3.2rem;
@@ -88,6 +88,9 @@ h6 {
       font-size: 1.6rem;
       line-height: 2.0rem; } }
 
+.home-text {
+  font-family: "Raleway", Georgia, serif; }
+
 b, strong {
   font-weight: 700; }
 
@@ -98,27 +101,30 @@ b, strong {
   border-radius: 1rem; }
 
 pre {
+  background-color: #000000;
+  box-shadow: 5px 5px 5px #949494;
   display: block;
   font-family: "Source Code Pro", "Lucida Console", monospace;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.6rem;
   overflow-x: auto;
+  padding: 0.8em;
   margin: 0; }
   pre code {
     display: inline-block;
     background-color: inherit;
-    color: inherit; }
+    color: #cc93c9; }
 
 code {
   font-family: "Source Code Pro", "Lucida Console", monospace;
   font-size: 1.6rem;
   font-weight: 400;
-  background-color: #E0E0E0;
-  color: #212121; }
+  background-color: #e9dbe4;
+  color: #000000; }
 
 blockquote {
-  border-left: 2px solid #E0E0E0;
+  border-left: 2px solid #e9dbe4;
   padding-left: 2.0rem;
   line-height: 2.2rem;
   font-weight: 400;
@@ -184,10 +190,10 @@ img {
 .content {
   flex: 1;
   display: flex;
-  margin-top: 1.6rem;
+  margin-top: 2.4rem;
   margin-bottom: 3.2rem; }
   .content article header {
-    margin-top: 6.4rem;
+    margin-top: 2.4rem;
     margin-bottom: 3.2rem; }
     .content article header h1 {
       font-size: 4.2rem;
@@ -250,8 +256,8 @@ img {
           text-align: left; } }
     .list ul li .title {
       font-size: 1.8rem;
-      color: #212121;
-      font-family: Lato, Helvetica, sans-serif;
+      color: #000000;
+      font-family: "Raleway", Helvetica, serif;
       font-weight: 700; }
       .list ul li .title:hover, .list ul li .title:focus {
         color: #1565c0; }
@@ -280,7 +286,7 @@ img {
         display: inline-block;
         position: relative; }
         .centered .about ul li a {
-          color: #212121;
+          color: #000000;
           text-transform: uppercase;
           margin-left: 1.0rem;
           margin-right: 1.0rem;
@@ -315,10 +321,10 @@ img {
   .navigation a, .navigation span {
     display: inline;
     font-size: 1.6rem;
-    font-family: Lato, Helvetica, sans-serif;
+    font-family: "Raleway", Helvetica, serif;
     font-weight: 700;
     line-height: 6.0rem;
-    color: #212121; }
+    color: #000000; }
   .navigation a:hover, .navigation a:focus {
     color: #1565c0; }
   .navigation .navigation-title {
@@ -340,9 +346,9 @@ img {
         padding: 0;
         max-height: 0;
         width: 100%;
-        background-color: #FAFAFA;
-        border-top: solid 2px #E0E0E0;
-        border-bottom: solid 2px #E0E0E0;
+        background-color: #fffbfb;
+        border-top: solid 2px #e9dbe4;
+        border-bottom: solid 2px #e9dbe4;
         transition: opacity 0.25s, max-height 0.15s linear; } }
     .navigation .navigation-list .navigation-item {
       float: left;
@@ -359,7 +365,7 @@ img {
         margin-right: 1.0rem; }
     @media only screen and (max-width: 768px) {
       .navigation .navigation-list .menu-separator {
-        border-top: 2px solid #212121;
+        border-top: 2px solid #000000;
         margin: 0 8.0rem; }
         .navigation .navigation-list .menu-separator span {
           display: none; } }
@@ -367,7 +373,7 @@ img {
     display: none; }
     @media only screen and (max-width: 768px) {
       .navigation #menu-toggle:checked + label {
-        color: #E0E0E0; }
+        color: #e9dbe4; }
       .navigation #menu-toggle:checked + label + ul {
         visibility: visible;
         opacity: 1;
@@ -380,7 +386,7 @@ img {
         font-size: 2.4rem;
         font-weight: 400;
         line-height: 6.0rem;
-        color: #212121;
+        color: #000000;
         cursor: pointer; }
         .navigation .menu-button:hover, .navigation .menu-button:focus {
           color: #1565c0; } }
@@ -388,7 +394,7 @@ img {
 .pagination {
   margin-top: 6.0rem;
   text-align: center;
-  font-family: Lato, Helvetica, sans-serif; }
+  font-family: "Raleway", Helvetica, serif; }
   .pagination li {
     display: inline;
     text-align: center;
