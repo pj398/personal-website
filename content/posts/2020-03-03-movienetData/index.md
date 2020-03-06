@@ -2,7 +2,7 @@
 draft = false
 date = 2020-03-03T15:28:00Z
 title = "movienetData: A data package for character interactions in popular films."
-description = ""
+description = "Introduction to movienetData, an R package containing movie character interaction network data"
 slug = "" 
 tags = ["R", "networks", "movies"]
 categories = []
@@ -11,7 +11,7 @@ series = []
 
 +++
 
-<img src="/img/movienetData_logo.png" align="right" height="160"/>
+<img src="hex-logo.png" align="right" height="160"/>
 
 I recently released the data I collected during my PhD research as a [data package](https://github.com/pj398/movienetData) for R. The main reasons I did this are:
 
@@ -22,7 +22,7 @@ One of the most common questions I get when chatting to people at conferences et
 The dataset was generated [to answer questions](https://doi.org/10.1080/14680777.2018.1510846) about the narrative marginalisation of women in popular cinema. However, there are a number of reasons why somebody might want to use it beyond this purpose: 
 
 * It is an ideal dataset for exploring _character networks_ in all their complexity - each film in the dataset comes with both an event list, which can be used for constructing dynamic network representations of the narratives, and an adjacency matrix derived from this event list, which can be used for static network representations. The event list also indexes each interaction by scene, allowing for the interaction data to be grouped into story chunks. 
-* The dataset offers useful examples of teaching data for illustrating basic network analysis ideas using familiar, easy to grasp examples of networks.
+* The dataset offers useful teaching data for illustrating basic network analysis ideas using familiar, easy to grasp examples of networks.
 * I'm sure there are all kinds of interesting questions about the films that the data can help to answer that I didn't think to ask.
 
 **Making my life easier**
@@ -50,7 +50,7 @@ library(movienetData)
 
 You can browse the complete list of different films in the dataset using `data(package = "movienetData")`:
 
-<img src="/img/movienetData_films.png" align="centre" height="450" />
+<img src="all-films.png" align="centre" height="450" />
 
 And load a specific film into the workspace using e.g. `data("marvel_01", "movienetData")`.
 
@@ -78,7 +78,7 @@ marvel_01$node_list
 marvel_01[[2]]
 ```
 
-*Example*:
+*Example:*
 
 If you just want to create a quick network diagram for the film *Black Panther*, you can do something like this:
 
@@ -99,7 +99,7 @@ plot(bp_net, label = black_panther[[2]]$char_name,
 
 ```
 
-<img src="/img/movienetData_panther.png" align="center" height="550" />
+<img src="panther-net.png" align="center" height="550" />
 
 
 
