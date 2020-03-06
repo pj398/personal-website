@@ -10,7 +10,7 @@ html {
 body {
   color: #000000;
   background-color: #fffbfb;
-  font-family: "Raleway", Georgia, serif;
+  font-family: "Raleway", Helvetica, serif;
   font-size: 1.8em;
   font-weight: 400;
   line-height: 1.8em; }
@@ -87,9 +87,6 @@ h6 {
     h6 {
       font-size: 1.6rem;
       line-height: 2.0rem; } }
-
-.home-text {
-  font-family: "Raleway", Georgia, serif; }
 
 b, strong {
   font-weight: 700; }
