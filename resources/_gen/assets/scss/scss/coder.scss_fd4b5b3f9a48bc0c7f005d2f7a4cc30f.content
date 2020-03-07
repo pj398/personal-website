@@ -153,8 +153,9 @@ table tr th:last-child {
 
 img {
   display: block;
-  max-width: 100%;
-  margin: auto; }
+  height: auto;
+  margin: auto;
+  max-width: 100%; }
 
 .wrapper {
   display: flex;
@@ -193,7 +194,8 @@ img {
   margin: 0 auto;
   margin-top: 2.4rem;
   margin-bottom: 3.2rem;
-  max-width: 768px; }
+  max-width: 100%;
+  width: 768px; }
   .content article header {
     margin-top: 2.4rem;
     margin-bottom: 3.2rem; }
@@ -223,7 +225,9 @@ img {
     margin-right: 1.5rem; }
   .content figure {
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    max-width: 100%;
+    height: auto; }
   .content figcaption p {
     text-align: center;
     font-style: italic;

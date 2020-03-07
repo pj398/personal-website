@@ -11,7 +11,7 @@ series = []
 
 +++
 
-<img src="hex-logo.png" align="right" height="160"/>
+<img src="hex-logo.png" align="right" width="160" />
 
 I recently released the data I collected during my PhD research as a [data package](https://github.com/pj398/movienetData) for R. The main reasons I did this are:
 
@@ -50,7 +50,7 @@ library(movienetData)
 
 You can browse the complete list of different films in the dataset using `data(package = "movienetData")`:
 
-<img src="all-films.png" align="centre" height="450" />
+<img src="all-films.png" width="500" />
 
 And load a specific film into the workspace using e.g. `data("marvel_01", "movienetData")`.
 
@@ -99,9 +99,7 @@ plot(bp_net, label = black_panther[[2]]$char_name,
 
 ```
 
-<img src="panther-net.png" align="center" height="550" />
-
-
+<img src="panther-net.png" />
 
 **Not in R**
 

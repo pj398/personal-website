@@ -4,7 +4,8 @@
   margin: 0 auto;
   margin-top: 2.4rem;
   margin-bottom: 3.2rem;
-  max-width: 768px;
+  max-width: 100%;
+  width: 768px;
   article {
     header {
       margin-top: 2.4rem;
@@ -51,6 +52,8 @@
   figure {
     margin: 0;
     padding: 0;
+    max-width: 100%;
+    height: auto;
   }
   figcaption p {
     text-align: center;
