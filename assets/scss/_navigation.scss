@@ -1,5 +1,7 @@
 .navigation {
-  height: 6.0rem;
+  background-color: $nav-color;
+  box-shadow: 4px 4px 4px #e7e6e6;
+  height: 6.4rem;
   width: 100%;
   a, span {
     display: inline;
