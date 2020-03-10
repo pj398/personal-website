@@ -10,7 +10,7 @@ externalLink = ""
 series = []
 +++
 
-![](figs/ilona_far_1x8_1.gif)
+![](figs/ilona_crop.gif)
 
 In this post I'm going to talk about [glitch art](http://jameshconnolly.com/glitchtalk.html) and how to make it entirely in R using databending.
 
@@ -26,27 +26,27 @@ One of the simplest methods of databending an image is to trick a software progr
 
 Making even small changes to this data (adding, deleting, moving, duplicating sections) can produce some really interesting results. One of the ways I used to entertain myself during class when I was a masters student was to databend images using the software installed on the university PCs. That's why, if you've ever seen my work desktop, you'll notice that my desktop background is the following image:
 
-<img src="figs/koala_glitched.png" style="max-width:550px;" />
+![](figs/koala_glitched.png)
 
 This is actually a glitched version of the following photo, which is one of the photos bundled with Windows 7 in the "Sample Pictures" folder:
 
-<img src="figs/koala_orig.jpg" style="max-width:550px;" />
+![](figs/koala_orig.png)
 
 ## Databending in R
 
-So far, so good - as you can see, the process of generating glitch art can be as easy as opening an image in a text editor, making a couple of changes and hitting save (note that if you're going to try this, do it on a copy of the image as the data corruption is typically irreverisble). In fact, making glitch art is now even easier than this, as there are a bunch of tools available (including mobile apps) that allow you to glitch images in all kinds of deliberate and controlled ways. 
+So far, so good - as you can see, the process of generating glitch art can be as easy as opening an image in a text editor, making a couple of changes and hitting save (note that if you're going to try this, do it on a copy of the image as the data corruption is typically irreverisble). 
 
-Personally, I find these more controlled and interactive approaches to glitching less rewarding than the "suck it and see" approach of applying chance operations to the data and seeing a unique result, like when you're making random edits in a text editor. However, the text editor approach still involves popping in and out of different image and text manipulation softwares and browsers, so I decided to set myself the challenge of streamlining this process so that it can be done entirely within R. 
+In fact, making glitch art is now even easier than this, as there are a bunch of tools available (including mobile apps) that allow you to glitch images in all kinds of deliberate and controlled ways.  Personally, I find these more controlled and interactive approaches to glitching less fun than the indeterminacy of applying chance operations to the data and seeing a unique result, like when you're making random edits in a text editor. 
 
-As far as I can tell from searching on Google and CRAN, nobody has done this in R before, so I decided to just make it up as I go along. 
+However, the text editor approach involves a lot of popping in and out of different image and text manipulation softwares and browsers, so I decided to set myself the challenge of streamlining this process so that it can be done entirely within R. As far as I can tell from searching on Google and CRAN, nobody has done this in R before, so I decided to just make it up as I go along. 
 
 ## Defining a glitch method
 
 #### Step 1: find a guinea pig
 
-Or, more specifically, a bear. I needed an image to experiment on, so I went to Unsplash and found [this magnificient bear](https://unsplash.com/photos/y421kXlUOQk) to participate in my trials:
+Or, more specifically, a bear. I needed an image to experiment on, so I went to [Unsplash](https://unsplash.com) and found [this magnificient bear](https://unsplash.com/photos/y421kXlUOQk) to participate in my trials:
 
-![](figs/bear_sml.jpg)
+![](figs/bear.png)
 
 #### Step 2: represent the file as raw data
 
@@ -57,11 +57,10 @@ Using magick, I reduced the file size to 40% of the original:
 
 ```R
 library(magick)
-```
-
-```r
 library(magrittr)
 ```
+
+<p></p>
 
 ```r
 magick::image_read("data/raw/bear.jpg") %>%
@@ -185,15 +184,15 @@ plot_glitch <- function(glitch) {
     print()
 }
 ```
-
+<p></p>
 
 ```r
 plot_glitch(my_glitch)
 ```
 
-<img src="figs/bear_glitched_10_20.png" style="max-width:550px;" />
+![](figs/bear_glitched_10_20.png)
 
-Great! How about if we tweak the parameters a little:
+Great - it works! How about if we tweak the parameters a little:
 
 
 ```r
@@ -273,7 +272,7 @@ my_glitch <- glitch_far(raw_image, n_change = 5)
 plot_glitch(my_glitch)
 ```
 
-<img src="figs/bear_far_1.png" style="max-width:550px;" />
+![](figs/bear_far_1.png)
 
 Well, there's no grey blocks, and this is a pretty interesting result, but our bear friend seems to have got a little lost in the sauce here.
 
@@ -282,7 +281,7 @@ Even when making fewer changes, we still get images like this:
 
 ```r
 my_glitch <- glitch_far(raw_image, n_change = 1)
-plot_glitch(my_glitch)
+plot_glitch(my_glitch) # x 10:
 ```
 
 ![](figs/method2_buffer.gif)
@@ -326,10 +325,17 @@ This produces nice clean results which don't break the image and allow the origi
 
 ```r
 my_glitch <- glitch_far2(raw_image, n_changes = 1, tune = 8)
-plot_glitch(my_glitch)
+plot_glitch(my_glitch) # x 10:
 ```
 
-![](figs/far2_8pc_1.gif)
+![](figs/bear_far_1x8_1.gif)
+
+```r
+my_glitch <- glitch_far2(raw_image, n_changes = 2, tune = 5)
+plot_glitch(my_glitch) # x 10:
+```
+
+![](figs/bear_far_2x5_1.gif)
 
 ### A note on the GIFs 
 
@@ -347,27 +353,27 @@ for (i in 1:10) {
 }
 ```
 
-and then using ImageMagick to create a GIF from these images in the command line by running `magick convert -delay 50 temp/*.png img/gif/my_gif.gif` in the terminal.
+and then using [ImageMagick](https://imagemagick.org/)'s command line tools to create a GIF from these images by running `magick convert -delay 50 temp/*.png img/gif/my_gif.gif` in the terminal.
 
 ## Putting the glitcher into action
 
-Now that we have a working glitch function, I want to test it out with some images that are more suited to databending. The ideal images for databending are those with not too many colours, and those which feature a subject against a plain background. I went back to [Unsplash](https://unsplash.com), browsed, and picked the first three that caught my eye:
+Now that we have a working glitch function, I want to test it out with some images that are more suited to databending. The ideal images for databending are generally those that don't have too many colours and feature a subject against a plain background. I went back to [Unsplash](https://unsplash.com), browsed, and picked the first three that caught my eye:
 
 <div class="icon-container">
-  <a href="https://unsplash.com/photos/yQILyG_fGuE" target="_blank"><img src="figs/building.jpg" style="height:360px; width: auto;" /></a>
-  <a href="https://unsplash.com/photos/LWuHsMPzoss" target="_blank"><img src="figs/ilona.jpg" style="height:360px; width: auto;" /></a>
-  <a href="https://unsplash.com/photos/i0yjni9irCA" target="_blank"><img src="figs/mike_von.jpg" style="height:360px; width: auto;" /></a>
+  <a href="https://unsplash.com/photos/yQILyG_fGuE" target="_blank"><img src="figs/building.jpg" style="max-height:360px; width:auto;" /></a>
+  <a href="https://unsplash.com/photos/LWuHsMPzoss" target="_blank"><img src="figs/ilona.jpg" style="max-height:360px; width:auto;" /></a>
+  <a href="https://unsplash.com/photos/i0yjni9irCA" target="_blank"><img src="figs/mike_von.jpg" style="max-height:360px; width:auto;" /></a>
 </div>
 
 Here are some of my favourite results and how I got them:
 
-<img src="figs/building_far_1x5_1.gif" style="max-height:550px;" />
+<img src="figs/building_far_1x5_1.gif" style="max-height:600px;max-width:100%;width:auto;" />
 <center>`glitch_far2(raw_image, n_changes = 1, tune = 5)`</center>
 
-<img src="figs/ilona_far_1x8_1.gif" style="max-height:550px;" />
+<img src="figs/ilona_far_1x8_1.gif" style="max-height:600px;max-width:100%;width:auto;" />
 <center>`glitch_far2(raw_image, n_changes = 1, tune = 8)`</center>
 
-<img src="figs/mike_far_1x6_1.gif" style="max-height:550px;" />
+<img src="figs/mike_far_1x6_1.gif" style="max-height:600px;max-width:100%;width:auto;" />
 <center>`glitch_far2(raw_image, n_changes = 1, tune = 6)`</center>
 
 Go forth and databend!
