@@ -206,7 +206,7 @@ Again, this looks pretty good.
 
 #### Step 6: celebrate (or not...)
 
-Actually, running the glitch_it() function a few times reveals a problem with this method: the resulting images often corrupt in a way which destroys whole sections of the image with grey blocks:
+Actually, running the `glitch_it()` function a few times reveals a problem with this method: the resulting images often corrupt in a way which destroys whole sections of the image with grey blocks:
 
 ![](figs/bear_10_20_greyblock_1.png)
 
@@ -382,7 +382,7 @@ Go forth and databend!
 
 For an overview of glitch art, I recommend reading James H. Connelly's fantastic [talk on the subject](http://jameshconnolly.com/glitchtalk.html).
 
-For a more how-to and data-bending oriented walkthrough, [stAllio's primers](http://blog.animalswithinanimals.com/search/label/primers) are brilliant.
+For a more how-to and databending-oriented walkthrough, [stAllio's primers](http://blog.animalswithinanimals.com/search/label/primers) are brilliant.
 
 Additional resources on glitch art and databending from:
 
