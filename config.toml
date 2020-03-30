@@ -17,7 +17,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [params]
     author = "Pete Jones"
-    info = "Social science PhD mostly studying fictional characters instead of real people"
+    info = "Social scientist sometimes studying fictional characters and sometimes studying real people"
     description = "Pete Jones"
     keywords = "blog,academic,personal"
     avatarurl = "img/pj.PNG"
