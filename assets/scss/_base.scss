@@ -111,6 +111,7 @@ b, strong {
 
 pre {
   background-color: #000000;
+  border-radius: 25px;
   box-shadow: 5px 5px 5px #949494;
   display: block;
   font-family: $code-font-family;
@@ -128,11 +129,11 @@ pre {
 }
 
 code {
+  background-color: $alt-bg-color;
+  color: $fg-color;
   font-family: $code-font-family;
   font-size: 1.6rem;
   font-weight: 400;
-  background-color: $alt-bg-color;
-  color: $fg-color;
 }
 
 blockquote {

@@ -15,6 +15,10 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [blackfriday]
 	fractions = false
 
+[markup]
+  [markup.highlight]
+    codeFences = false
+
 [params]
     author = "Pete Jones"
     info = "Social scientist sometimes studying fictional characters and sometimes studying real people"
