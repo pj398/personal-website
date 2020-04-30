@@ -128,6 +128,7 @@ and, just to be clear, this event list is structured like so:
 tfa$event_list[1:5, 1:7]
 ```
 <p></p>
+
 ```
 ##      eventID sceneID speakerID Lor.San.Tekka..1. Poe.Dameron..2. Kylo.Ren..3. Captain.Phasma..4.
 ## [1,]       1       1         1                 0               1            0                  0
