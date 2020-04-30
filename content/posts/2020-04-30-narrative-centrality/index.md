@@ -127,7 +127,8 @@ and, just to be clear, this event list is structured like so:
 ```r
 tfa$event_list[1:5, 1:7]
 ```
-<p><br></p>
+
+<p></p>
 
 ```
 ##      eventID sceneID speakerID Lor.San.Tekka..1. Poe.Dameron..2. Kylo.Ren..3. Captain.Phasma..4.
@@ -158,7 +159,8 @@ First, I'll put the data into a [tidy](https://r4ds.had.co.nz/tidy-data.html) fo
 ```r
 library(tidyverse)
 ```
-<p><br></p>
+
+<p></p>
 
 ```r
 tfa_out_tidy <- cbind.data.frame("Event" = seq.int(1, dim(tfa_scores$out_scores)[1]), 
@@ -209,7 +211,8 @@ And then this can be plotted. First, the speaking scores:
 ```r
 library(directlabels)
 ```
-<p><br></p>
+
+<p></p>
 
 ```r
 tfa_out_tidy %>%
