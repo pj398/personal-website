@@ -188,6 +188,8 @@ So the data now looks like so:
 tfa_out_tidy
 ```
 
+<p></p>
+
 ```
 ## # A tibble: 21,328 x 4
 ##    Event Character          Score Label      
@@ -313,6 +315,8 @@ Which is formatted like so:
   dplyr::slice(1:3)
 ```
 
+<p></p>
+
 ```
 ## # A tibble: 3 x 12
 ##   index season episode episode_name director writer character text 
@@ -375,6 +379,8 @@ ep_1_events <- to_events(ep_1)
 ep_1_events[1:5, 1:7]
 ```
 
+<p></p>
+
 ```
 ##      eventID speakerID Michael Jim Pam Dwight Jan
 ## [1,]       1         1       0   1   0      0   0
@@ -392,10 +398,7 @@ office_scores <- narrative_centrality(ep_1_events,
                                       chars = unique(ep_1$character),
                                       mode = "out",
                                       start_at = 2)
-```
 
-
-```r
 cbind.data.frame("Event" = seq.int(1, dim(office_scores)[1]), office_scores) %>% 
   tidyr::pivot_longer(cols = -Event,
                       names_to = "Character", 
