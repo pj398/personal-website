@@ -10,7 +10,7 @@ I am currently working on the [EmpoderaData](https://datapopalliance.org/empoder
 
 ### Publications
 
-Jones, Pete, Johan Koskinen and Eithne Quinn. "Measuring centrality in film narratives using dynamic character interaction networks." *Social Networks*, forthcoming.
+Jones, Pete, Eithne Quinn and Johan Koskinen. 2020. "Measuring centrality in film narratives using dynamic character interaction networks." *Social Networks* 63: 21-37. DOI: [10.1016/j.socnet.2020.03.003](https://doi.org/10.1016/j.socnet.2020.03.003).
 
 Jones, Pete. 2018. "Diana in the World of Men: a character network approach to analysing gendered vocal representation in *Wonder Woman*." *Feminist Media Studies*, DOI: [10.1080/14680777.2018.1510846](https://doi.org/10.1080/14680777.2018.1510846).
 
