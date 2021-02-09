@@ -12,4 +12,5 @@ Get in touch:
     <a href="https://letterboxd.com/pj398" rel=me target="_blank"><img src="/img/letterboxd.svg" class="icon" alt="letterboxd" width="50" /></a>
     <a href="https://www.linkedin.com/in/pete-jones-13b955105" rel=me target="_blank"><img src="/img/linkedin.svg" class="icon" alt="linkedin" width="50" /></a>
     <a href="https://researchgate.net/profile/Pete_Jones6" rel=me target="_blank"><img src="/img/researchgate.svg" class="icon" alt="researchgate" width="50" /></a>
+    <a href="https://scholar.google.com/citations?user=-GMiAW8AAAAJ&hl=en" rel=me target="_blank"><img src="/img/googlescholar.svg" class="icon" alt="googlescholar" width="50" /></a>
 </div>
