@@ -1,8 +1,8 @@
 +++
 draft = false
 date = 2020-03-03T15:28:00Z
-title = "movienetData: A data package for character interactions in popular films."
-description = "Introduction to movienetData, an R package containing movie character interaction network data"
+title = "movienetdata: A data package for character interactions in popular films."
+description = "Introduction to movienetdata, an R package containing movie character interaction network data"
 slug = "" 
 tags = ["R", "networks", "movies"]
 categories = []
@@ -13,7 +13,7 @@ series = []
 
 <img src="hex-logo.png" align="right" width="160" />
 
-I recently released the data I collected during my PhD research as a [data package](https://github.com/pj398/movienetData) for R. The main reasons I did this are:
+I recently released the data I collected during my PhD research as a [data package](https://github.com/pj398/movienetdata) for R. The main reasons I did this are:
 
 **Sharing**
 
@@ -39,20 +39,20 @@ If you use R, you can install the package using `devtools`:
 
 ```R
 # install.packages("devtools")
-devtools::install_github("pj398/movienetData")
+devtools::install_github("pj398/movienetdata")
 ```
 
 Then, load the package:
 
 ```R
-library(movienetData)
+library(movienetdata)
 ```
 
-You can browse the complete list of different films in the dataset using `data(package = "movienetData")`:
+You can browse the complete list of different films in the dataset using `data(package = "movienetdata")`:
 
-<img src="all-films.png" width="500" />
+<img src="all-films.png" width="600" />
 
-And load a specific film into the workspace using e.g. `data("marvel_01", "movienetData")`.
+And load a specific film into the workspace using e.g. `data("mcu01_ironman", "movienetdata")`.
 
 Each film is stored as a list containing three elements:
 
@@ -61,7 +61,9 @@ Each film is stored as a list containing three elements:
     dummy variables for each recipient.
 2.  The node list. Rows correspond to named speaking characters, with
     columns corresponding to variables for ID, name, total lines spoken
-    (`nlines`), total times spoken to (`linesin`), and gender.
+    (`nlines`), total times spoken to (`linesin`), and gender. Note that 
+    some films in the dataset might have additional or different variables 
+    included.
 3.  The adjacency matrix. This is derived from the event list through
     aggregation and can be useful for static purposes such as
     visualising the network as a sociogram.
@@ -70,12 +72,12 @@ Access specific elements by name or by indexing the list:
 
 ``` R
 # Get the nodes by name
-marvel_01$node_list
+mcu01_ironman$node_list
 ```
 
 ``` R
 # Get the nodes by indexing
-marvel_01[[2]]
+mcu01_ironman[[2]]
 ```
 
 *Example:*
@@ -83,7 +85,7 @@ marvel_01[[2]]
 If you just want to create a quick network diagram for the film *Black Panther*, you can do something like this:
 
 ```R
-black_panther <- movienetData::marvel_18
+black_panther <- movienetData::mcu18_blackpanther
 # install.packages("network")
 library(network)
 # Create network object from adjacency matrix
@@ -103,4 +105,4 @@ plot(bp_net, label = black_panther[[2]]$char_name,
 
 **Not in R**
 
-If you're not an R user, you can still access the raw data from the [package source on Github](https://github.com/pj398/movienetData). In the `data-raw` folder you will find the CSV files for each film's event list and node list.
+If you're not an R user, you can still access the raw data from the [package source on Github](https://github.com/pj398/movienetdata). In the `data-raw` folder you will find the CSV files for each film's event list and node list.
