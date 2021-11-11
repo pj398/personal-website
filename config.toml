@@ -41,7 +41,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     name = "E-mail"
     icon = "fas fa-envelope"
     weight = 1
-    url = "mailto:petejones398@gmail.com"
+    url = "mailto:petejonesphd@gmail.com"
 	
 [[params.social]]
     name = "Twitter"
