@@ -42,36 +42,44 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     icon = "fas fa-envelope"
     weight = 1
     url = "mailto:pete@petejon.es"
+    target = "_blank"
 	
 [[params.social]]
-    name = "Twitter"
-    icon = "fab fa-twitter"
+    name = "Mastodon"
+    icon = "fab fa-mastodon"
     weight = 2
-    url = "https://twitter.com/pj_mcr"
+    url = "https://hcommons.social/@petejones"
+    rel = "me"
+    target = "_blank"
 	
 [[params.social]]
     name = "Github"
     icon = "fab fa-github"
     weight = 3
     url = "https://github.com/pj398/"
+    target = "_blank"
 
 [[params.social]]
-    name = "Goodreads"
-    icon = "fab fa-goodreads"
+    name = "Bookwyrm"
+    icon = "fa fa-book"
     weight = 4
-    url = "https://www.goodreads.com/user/show/38789704-pj"
+    url = "https://bookrastinating.com/@kiskadee"
+    rel = "me"
+    target = "_blank"
 	
 [[params.social]]
     name = "LinkedIn"
     icon = "fab fa-linkedin"
     weight = 5
     url = "https://www.linkedin.com/in/pete-jones-13b955105"
+    target = "_blank"
 
 [[params.social]]
     name = "ResearchGate"
     icon = "fab fa-researchgate"
     weight = 6
     url = "https://researchgate.net/profile/Pete_Jones6"
+    target = "_blank"
 	
 # Menu links
 [[menu.main]]
