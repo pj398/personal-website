@@ -10,11 +10,13 @@ The other main strand of my research explores relational perspectives and tools 
 
 ### Publications
 
+Jones, Pete, Deb Verhoeven, Aresh Dadlani and Vejune Zemaityte. 2024. "She Must Be Seeing Things! Gender disparity in camera department networks." *Social Networks* 76: 120-134. DOI: [10.1016/j.socnet.2023.09.004](https://doi.org/10.1016/j.socnet.2023.09.004). *(First published online in 2023)*.
+
 Jones, Pete and Joshua Gulam. 2023. "A critical quantitative analysis of race and representation in the *Fast Saga* Films." In *Full-Throttle Franchise: The Culture, Business and Politics of Fast & Furious*. London: Bloomsbury.
 
 Jones, Pete, Eithne Quinn and Johan Koskinen. 2020. "Measuring centrality in film narratives using dynamic character interaction networks." *Social Networks* 63: 21-37. DOI: [10.1016/j.socnet.2020.03.003](https://doi.org/10.1016/j.socnet.2020.03.003).
 
-Jones, Pete. 2020. "Diana in the World of Men: a character network approach to analysing gendered vocal representation in *Wonder Woman*." *Feminist Media Studies* 20 (1): 18-34. DOI: [10.1080/14680777.2018.1510846](https://doi.org/10.1080/14680777.2018.1510846). *(First published online in 2018)*
+Jones, Pete. 2020. "Diana in the World of Men: a character network approach to analysing gendered vocal representation in *Wonder Woman*." *Feminist Media Studies* 20 (1): 18-34. DOI: [10.1080/14680777.2018.1510846](https://doi.org/10.1080/14680777.2018.1510846). *(First published online in 2018)*.
 
 ### Research interests
 
