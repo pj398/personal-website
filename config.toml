@@ -58,28 +58,27 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     weight = 3
     url = "https://github.com/pj398/"
     target = "_blank"
-
-[[params.social]]
-    name = "Bookwyrm"
-    icon = "fa fa-book"
-    weight = 4
-    rel = "me"
-    url = "https://bookrastinating.com/@kiskadee"
-    target = "_blank"
 	
 [[params.social]]
     name = "LinkedIn"
     icon = "fab fa-linkedin"
-    weight = 5
+    weight = 4
     url = "https://www.linkedin.com/in/pete-jones-13b955105"
     target = "_blank"
 
 [[params.social]]
     name = "ResearchGate"
     icon = "fab fa-researchgate"
-    weight = 6
+    weight = 5
     url = "https://researchgate.net/profile/Pete_Jones6"
     target = "_blank"
+
+# [[params.social]]
+#     name = "Google Scholar"
+#     icon = "fa-brands fa-google-scholar"
+#     weight = 6
+#     url = "https://scholar.google.com/citations?user=-GMiAW8AAAAJ&hl=en"
+#     target = "_blank"
 	
 # Menu links
 [[menu.main]]
