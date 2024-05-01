@@ -53,17 +53,17 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     target = "_blank"
 	
 [[params.social]]
-    name = "Github"
-    icon = "fab fa-github"
+    name = "Codeberg"
+    icon = "fab fa-git-alt"
     weight = 3
-    url = "https://github.com/pj398/"
+    url = "https://codeberg.org/pjphd"
     target = "_blank"
 	
 [[params.social]]
-    name = "LinkedIn"
-    icon = "fab fa-linkedin"
+    name = "ORCiD"
+    icon = "fab fa-orcid"
     weight = 4
-    url = "https://www.linkedin.com/in/pete-jones-13b955105"
+    url = "https://orcid.org/0000-0003-4040-394X"
     target = "_blank"
 
 [[params.social]]
@@ -92,9 +92,9 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     url  = "/research/"
 	
 [[menu.main]]
-    name = "Contact"
+    name = "Connect"
     weight = 3
-    url  = "/contact/"	
+    url  = "/connect/"	
 
 [[menu.main]]
     name = "Blog"
