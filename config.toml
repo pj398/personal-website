@@ -26,14 +26,14 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     info = "Social scientist sometimes studying fictional characters and sometimes studying real people"
     description = "Pete Jones"
     keywords = "blog,academic,personal"
-    avatarurl = "img/pj_anim.png"
+    avatarurl = "img/pj_anim_2024_720px.png"
 
     favicon_32 = "img/icon.png"
     favicon_16 = "img/icon.png"
 
     hidecredits = false
     hidecopyright = false
-	rtl = false
+    rtl = false
     math = true
 
 # Social links

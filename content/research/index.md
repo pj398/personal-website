@@ -3,10 +3,9 @@ title: "Research"
 date: 2019-08-10T22:49:10+01:00
 ---
 
-Since 2021 I have been working at the University of Alberta as part of the [Centre for Analysis of Relational Data](https://kinomatics.com/about/card-lab/) (CARD) and as a postdoc on the international [GEP-Analysis project](https://kinomatics.com/gepanalysis/). 
+Since 2021 I have been working with the [Kinomatics](https://kinomatics.com/) research collective on a variety of projects using social network analysis and computational methods to study inequities in the global screen industries. Much of this work has taken place at the University of Alberta as part of the [Centre for Analysis of Relational Data](https://kinomatics.com/about/card-lab/) (CARD), and continues as I look for a new home for my research activities.
 
-I worked on the social network analysis subproject team of the GEP-Analysis project, which looked at the gendered collaboration patterns of key creatives in the film industries of Canada, the UK and Germany. We also simulated several policy-related "what if" scenarios and tested their impact on changing the gendered power structures in the networks.
-A summary of this work can be found on the [Kinomatics website](https://kinomatics.com/gep_networks/) and in the project's [final report](https://opus4.kobv.de/opus4-filmuniversitaet/frontdoor/index/index/docId/390). 
+In my postdoctoral fellowship at the University of Alberta I worked on the social network analysis subproject team of the international [GEP-Analysis project](https://kinomatics.com/gepanalysis/). The subproject looked at the gendered collaboration patterns of key creatives in the film industries of Canada, the UK and Germany. We also simulated several policy-related "what if" scenarios and tested their impact on changing the gendered power structures in the networks. A summary of this work can be found on the [Kinomatics website](https://kinomatics.com/gep_networks/) and in the project's [final report](https://opus4.kobv.de/opus4-filmuniversitaet/frontdoor/index/index/docId/390). 
 
 The other main strand of my research explores relational perspectives and tools for analysing the narrative marginalisation of women in popular Hollywood cinema. A concise (1,000 word) intro to this work can be found [here](https://femquant.squarespace.com/blog/2020/5/25/character-networks-and-the-narrative-marginalisation-of-women-in-popular-cinema), as well as in the journal articles listed below. All the data can be found in the [movienetdata](https://codeberg.org/pjphd/movienetdata) package, and the tools are implemented in the [charinet](https://codeberg.org/pjphd/charinet) package for R.
 
@@ -25,11 +24,11 @@ Jones, Pete. 2020. "Diana in the World of Men: a character network approach to a
 ### Research interests
 
 - Creative industries inequalities
-- Feminism and post-feminism
+- Feminism and post-feminism in the media
 - Digital humanities / computational social science
 - Social network analysis
 
-### CV
+### Previous work
 
 I was an ESRC Postdoctoral Fellow in the University of Manchester's Department of Social Statistics from 2020-2021, further developing my doctoral research through the project [Exploring the marginalisation of women in popular cinema using quantitative network tools](https://gtr.ukri.org/projects?ref=ES%2FV011472%2F1). 
 
