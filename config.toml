@@ -5,7 +5,7 @@ theme = "kita"
 
 # The site title and description; used in feeds by default.
 title = "Pete Jones"
-description = "I'm a social scientist sometimes studying fictional characters and sometimes studying real people. My qualifications, publications, and research interests are pretty well documented at the links below."
+description = "Social scientist sometimes studying fictional characters and sometimes studying real people."
 
 # The default site author.
 author = "Pete Jones"
@@ -74,7 +74,7 @@ header_dark_color = "#313244"
 # The profile on home page.
 [extra.profile]
 name = "Pete Jones"
-bio = "Social scientist sometimes studying fictional characters and sometimes studying real people."
+bio = "I'm a social scientist sometimes studying fictional characters and sometimes studying real people. My qualifications, publications, and research interests are pretty well documented at the links below."
 # The URL of avatar.
 avatar_url = "img/pj_anim_2024_720px.png"
 # Invert color in dark mode.
