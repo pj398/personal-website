@@ -1,15 +1,10 @@
-+++ 
++++
 draft = false
 date = 2020-04-30T12:05:15+01:00
 title = "Implementing narrative centrality for character interaction networks: a practical walkthrough"
 description = "This post provides a practical illustration of how to implement a recently published dynamic measure of character centrality in film narratives."
-slug = "" 
 tags = ["R", "networks", "movies"]
-categories = []
-externalLink = ""
-series = []
 +++
-
 
 In this post I'll provide a practical walkthrough to complement a paper I wrote with my co-authors Johan Koskinen and Eithne Quinn on measuring centrality in character interaction networks, which has now been published in *Social Networks* (read the published version [here](https://doi.org/10.1016/j.socnet.2020.03.003) or the accepted author manuscript [here](https://petejon.es/posts/2020-04-30-narrative-centrality/Jones-Quinn-Koskinen-2020-accepted-manuscript.pdf).).
 

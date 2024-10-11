@@ -1,102 +1,145 @@
-theme = "hugo-coder"
-baseURL = "https://petejon.es/"
-builddrafts = true
-canonifyurls = true
-contentdir = "content"
-languageCode = "en-US"
-layoutdir = "layouts"
-publishdir = "public"
-author = "Pete Jones"
+# The base URL of the site; the only required configuration variable.
+base_url = "https://petejon.es"
+
+theme = "kita"
+
+# The site title and description; used in feeds by default.
 title = "Pete Jones"
-disqusshortname = ""
-pluralizelisttitles = false
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+description = "Social scientist sometimes studying fictional characters and sometimes studying real people."
 
-[blackfriday]
-	fractions = false
+# The default site author.
+author = "Pete Jones"
 
-[markup]
-  [markup.highlight]
-    codeFences = false
-  [markup.goldmark.renderer]
-      unsafe = true
+# The default language; used in feeds.
+default_language = "en"
 
-[params]
-    author = "Pete Jones"
-    info = "Social scientist sometimes studying fictional characters and sometimes studying real people"
-    description = "Pete Jones"
-    keywords = "blog,academic,personal"
-    avatarurl = "img/pj_anim_2024_720px.png"
+# When set to "true", a feed is automatically generated.
+generate_feeds = true
 
-    favicon_32 = "img/icon.png"
-    favicon_16 = "img/icon.png"
+# The filenames to use for the feeds. Used as the template filenames, too.
+# Defaults to ["atom.xml"], which has a built-in template that renders an Atom 1.0 feed.
+# There is also a built-in template "rss.xml" that renders an RSS 2.0 feed.
+feed_filenames = ["rss.xml"]
 
-    hidecredits = false
-    hidecopyright = false
-    rtl = false
-    math = true
+# The taxonomies to be rendered for the site and their configuration of the default languages
+# Example:
+#     taxonomies = [
+#       {name = "tags", feed = true}, # each tag will have its own feed
+#       {name = "tags"}, # you can have taxonomies with the same name in multiple languages
+#       {name = "categories", paginate_by = 5},  # 5 items per page for a term
+#       {name = "authors"}, # Basic definition: no feed or pagination
+#     ]
+#
+taxonomies = [{ name = "tags", rss = true, paginate_by = 5 }]
 
-# Social links
-[[params.social]]
-    name = "E-mail"
-    icon = "fas fa-envelope"
-    weight = 1
-    url = "mailto:pete@petejon.es"
-    target = "_blank"
-	
-[[params.social]]
-    name = "Mastodon"
-    icon = "fab fa-mastodon"
-    weight = 2
-    rel = "me"
-    url = "https://hcommons.social/@petejones"
-    target = "_blank"
-	
-[[params.social]]
-    name = "Codeberg"
-    icon = "fab fa-git-alt"
-    weight = 3
-    url = "https://codeberg.org/pjphd"
-    target = "_blank"
-	
-[[params.social]]
-    name = "ORCiD"
-    icon = "fab fa-orcid"
-    weight = 4
-    url = "https://orcid.org/0000-0003-4040-394X"
-    target = "_blank"
+# Configuration of the Markdown rendering
+[markdown]
+# When set to "true", all code blocks are highlighted.
+highlight_code = true
 
-[[params.social]]
-    name = "ResearchGate"
-    icon = "fab fa-researchgate"
-    weight = 5
-    url = "https://researchgate.net/profile/Pete_Jones6"
-    target = "_blank"
+# A list of directories used to search for additional `.sublime-syntax` and `.tmTheme` files.
+extra_syntaxes_and_themes = []
 
-# [[params.social]]
-#     name = "Google Scholar"
-#     icon = "fa-brands fa-google-scholar"
-#     weight = 6
-#     url = "https://scholar.google.com/citations?user=-GMiAW8AAAAJ&hl=en"
-#     target = "_blank"
-	
-# Menu links
-[[menu.main]]
-    name = "Home"
-    weight = 1
-    url  = "/"
+# The theme to use for code highlighting.
+# See below for list of allowed values.
+highlight_theme = "base16-ocean-dark"
 
-[[menu.main]]
-    name = "Research"
-    weight = 2
-    url  = "/research/"
-	
-[[menu.main]]
-    name = "Connect"
-    weight = 3
-    url  = "/connect/"	
+# The Kita theme style config.
+[extra]
+# Enable KaTex math formula support globally.
+math = false
+# Enable mermaid support globally.
+mermaid = false
+# Enable comment support globally.
+comment = false
+# The URL of social image.
+social_image = "icons/codeberg.svg"
 
-[[menu.main]]
-    name = "Blog"
-    weight = 4
-    url  = "/posts/"	
+[extra.style]
+# The custom background color.
+bg_color = "#eff1f5"
+
+# The custom background color in dark mode.
+bg_dark_color = "#1e1e2e"
+
+# Enable header blur.
+# header_blur = true
+
+# The custom header color, only available when `header_blur` is false.
+header_color = "#ccd0da"
+
+# The custom header color in dark mode, only available when `header_blur` is false.
+header_dark_color = "#313244"
+
+# The profile on home page.
+[extra.profile]
+name = "Pete Jones"
+bio = "Social scientist sometimes studying fictional characters and sometimes studying real people."
+# The URL of avatar.
+avatar_url = "img/pj_anim_2024_720px.png"
+# Invert color in dark mode.
+avatar_invert = false
+
+# The social icons below the profile on the home page.
+# The `name` should be the file name of static/icons/*.svg or the icon name of https://simpleicons.org/
+[[extra.profile.social]]
+name = "email"
+url = "mailto:pete@petejon.es"
+
+[[extra.profile.social]]
+name = "mastodon"
+url = "https://hcommons.social/@petejones"
+
+[[extra.profile.social]]
+name = "git"
+url = "https://codeberg.org/pjphd"
+
+[[extra.profile.social]]
+name = "orcid"
+url = "https://orcid.org/0000-0003-4040-394X"
+
+[[extra.profile.social]]
+name = "googlescholar"
+url = "https://scholar.google.com/citations?user=UCnU00YAAAAJ"
+
+[[extra.profile.social]]
+name = "researchgate"
+url = "https://researchgate.net/profile/Pete_Jones6"
+
+[[extra.profile.social]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/pete-jones-13b955105"
+
+# The top menu.
+[[extra.menu]]
+name = "Blog"
+url = "$BASE_URL/posts"
+
+#[[extra.menu]]
+#name = "Archive"
+#url = "$BASE_URL/archive"
+
+#[[extra.menu]]
+#name = "Tags"
+#url = "$BASE_URL/tags"
+
+# The page footer options.
+[extra.footer]
+since = 2024
+license = "CC BY-SA 4.0"
+license_url = "https://creativecommons.org/licenses/by-sa/4.0/deed"
+
+# The giscus comment options, only available when comment is enabled.
+[extra.giscus]
+repo = ""
+repo_id = ""
+category = ""
+category_id = ""
+mapping = "pathname"
+strict = 1
+reactions_enabled = 0
+emit_metadata = 0
+input_position = "top"
+theme = "light"
+lang = "en"
+loading = "lazy"

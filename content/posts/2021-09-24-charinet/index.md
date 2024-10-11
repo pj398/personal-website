@@ -3,11 +3,7 @@ draft = false
 date = 2021-09-24T10:18:00Z
 title = "charinet: A package for character interaction network analysis."
 description = "Introduction to charinet, an R package for analysing character interaction network data"
-slug = "" 
 tags = ["R", "networks", "movies"]
-categories = []
-externalLink = ""
-series = []
 +++
 
 <img src="hex-logo.png" align="right" width="160" />
