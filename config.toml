@@ -5,7 +5,7 @@ theme = "kita"
 
 # The site title and description; used in feeds by default.
 title = "Pete Jones"
-description = "Social scientist sometimes studying fictional characters and sometimes studying real people."
+description = "I'm a social scientist sometimes studying fictional characters and sometimes studying real people. My qualifications, publications, and research interests are pretty well documented at the links below."
 
 # The default site author.
 author = "Pete Jones"
