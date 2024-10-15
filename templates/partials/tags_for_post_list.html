@@ -1,0 +1,17 @@
+<div class="not-prose">
+  {% if page.taxonomies %}
+    {% set_global term_names = [] %}<!---->
+    {% for term_name, terms in page.taxonomies %}<!---->
+      {% set_global term_names = term_names | concat(with=term_name) %}<!---->
+    {% endfor %}<!---->
+    {% for term_name in term_names | sort %}
+      <span class="text-sm antialiased">{{ term_name | title }}: </span>
+      {% for term in page.taxonomies[term_name] %}
+        <span class="text-sm antialiased opacity-60">
+          {{ term }}
+        </span>
+      {% endfor %}
+    {% endfor %}
+  {% endif %}
+</div>
+

@@ -1,0 +1,33 @@
+<div class="text-sm antialiased opacity-60">
+  {% if page.date %}
+  <time>{{ page.date | date }}</time>
+  <span class="mx-1">&middot;</span>
+  <span>{{ page.word_count }} words</span>
+  {% endif %}<!---->
+  {% if page.authors | length > 0 %}<!---->
+  {% set author = page.authors | join(sep=", ") %}<!---->
+  {% else %}<!---->
+  {% set author = config.author %}<!---->
+  {% endif %}<!---->
+  <!--{% if author %}
+  <span class="mx-1">&middot;</span>
+  <span>{{ author }}</span>
+  {% endif %}-->
+  {% if page.taxonomies %}
+    <span class="mx-1">&middot;</span>
+    {% set_global term_names = [] %}<!---->
+    {% for term_name, terms in page.taxonomies %}<!---->
+      {% set_global term_names = term_names | concat(with=term_name) %}<!---->
+    {% endfor %}<!---->
+    {% for term_name in term_names | sort %}
+      <span>{{ term_name | title }}: </span>
+      {% for term in page.taxonomies[term_name] %}
+        <span class="opacity-60">
+          [{{ term }}]
+        </span>
+      {% endfor %}
+    {% endfor %}
+  {% endif %}
+  <!-- Page Info inject -->
+  {% include "injects/page_info.html" ignore missing %}
+</div>
