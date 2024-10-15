@@ -9,9 +9,9 @@ tags = ["R", "networks", "movies"]
 
 <img src="hex-logo.png" align="right" width="160" />
 
-As part of my ESRC postdoc fellowship I have been working on turning the tools I use in my research to analyse character interaction networks into an R package called [charinet](https://github.com/pj398/charinet). 
+As part of my ESRC postdoc fellowship I have been working on turning the tools I use in my research to analyse character interaction networks into an R package called [charinet](https://codeberg.org/pjphd/charinet). 
 
-I won't go into detail here about what the package does and how it works because the GitHub README contains a pretty extensive demo. But the main things it offers are:
+I won't go into detail here about what the package does and how it works because the project README contains a pretty extensive demo. But the main things it offers are:
 
  - Functions for quickly reading in and reshaping lists of character interactions in common data structures.
  - A screenplay parser which will extract a relational event list from a well-formatted PDF of a screenplay.
@@ -20,7 +20,7 @@ I won't go into detail here about what the package does and how it works because
 
  I've been using the package myself for the last few months and it has really improved my workflow for the common tasks that I usually want to do when analysing character interaction data.
 
- It also works well in conjunction with the data already available in the [movienetdata](https://github.com/pj398/movienetdata) package.
+ It also works well in conjunction with the data already available in the [movienetdata](https://codeberg.org/pjphd/movienetdata) package.
 
 With just a few lines of code, you can get a good sense of the character dynamics of a given narrative:
 
@@ -55,3 +55,7 @@ iron_man$event_list %>%
 
  
 I'd love for people to try it out and let me know if it works for them and if there's anything else they'd like a package like this to do. I've tried to document everything clearly in the package, but do let me know if any of the functions or arguments aren't clear.
+
+{% admonition(type="info", title="Note") %}
+This post was edited to update the various references to the package source repository, which is now hosted on [Codeberg](https://codeberg.org).
+{% end %}

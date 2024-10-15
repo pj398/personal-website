@@ -9,7 +9,7 @@ tags = ["R", "networks", "movies"]
 
 <img src="hex-logo.png" align="right" width="160" />
 
-I recently released the data I collected during my PhD research as a [data package](https://github.com/pj398/movienetdata) for R. The main reasons I did this are:
+I recently released the data I collected during my PhD research as a [data package](https://codeberg.org/pjphd/movienetdata) for R. The main reasons I did this are:
 
 **Sharing**
 
@@ -31,11 +31,13 @@ Finally, I wanted some hands-on experience with R package development, and data 
 
 __In R__
 
-If you use R, you can install the package using `devtools`:
+If you use R, you can install the package using any package manager that can install from git repositories:
 
 ```R
-# install.packages("devtools")
-devtools::install_github("pj398/movienetdata")
+# e.g. using {remotes}:
+remotes::install_git("https://codeberg.org/pjphd/movienetdata.git")
+# or using {pak}:
+pak::pkg_install("git::https://codeberg.org/pjphd/movienetdata.git")
 ```
 
 Then, load the package:
@@ -81,7 +83,7 @@ mcu01_ironman[[2]]
 If you just want to create a quick network diagram for the film *Black Panther*, you can do something like this:
 
 ```R
-black_panther <- movienetData::mcu18_blackpanther
+black_panther <- movienetdata::mcu18_blackpanther
 # install.packages("network")
 library(network)
 # Create network object from adjacency matrix
@@ -101,4 +103,8 @@ plot(bp_net, label = black_panther[[2]]$char_name,
 
 **Not in R**
 
-If you're not an R user, you can still access the raw data from the [package source on Github](https://github.com/pj398/movienetdata). In the `data-raw` folder you will find the CSV files for each film's event list and node list.
+If you're not an R user, you can still access the raw data from the [package source repository](https://codeberg.org/pjphd/movienetdata). In the `data-raw` folder you will find the CSV files for each film's event list and node list.
+
+{% admonition(type="info", title="Note") %}
+This post was edited to update the various references to the package source repository, which is now hosted on [Codeberg](https://codeberg.org).
+{% end %}

@@ -39,6 +39,10 @@ However, the text editor approach involves a lot of popping in and out of differ
 
 ## Defining a glitch method
 
+{% admonition(type="info", title="Note from the future") %}
+Some time after making this post, I put together a toy package called [{glitchr}](https://codeberg.org/pjphd/glitchr), which provides a simple R interface to the various functions discussed in this post.
+{% end %}
+
 #### Step 1: find a guinea pig
 
 Or, more specifically, a bear. I needed an image to experiment on, so I went to [Unsplash](https://unsplash.com) and found [this magnificient bear](https://unsplash.com/photos/y421kXlUOQk) to participate in my trials:

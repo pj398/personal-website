@@ -7,6 +7,12 @@ description = "A practical walkthrough of how I implemented a recently published
 tags = ["R", "networks", "movies", "guides"]
 +++
 
+{% admonition(type="warning", title="Note from the future!") %}
+I later implemented the centrality measures discussed in this post in the [{charinet}](https://codeberg.org/pjphd/charinet) package, and [the functions there](https://codeberg.org/pjphd/charinet#narrative-centrality) provide a better and easier to use implementation which should supercede the code in this post.
+
+Even though this post is outdated now, I'll leave it up because the discussion around the measures covers some slightly different ground to what's covered in the {charinet} README.
+{% end %}
+
 In this post I'll provide a practical walkthrough to complement a paper I wrote with my co-authors Johan Koskinen and Eithne Quinn on measuring centrality in character interaction networks, which has now been published in *Social Networks* (read the published version [here](https://doi.org/10.1016/j.socnet.2020.03.003) or the accepted author manuscript [here](https://petejon.es/posts/2020-04-30-narrative-centrality/Jones-Quinn-Koskinen-2020-accepted-manuscript.pdf).).
 
 I've been presenting this work at conferences for a while now, and have received some great feedback along the way. Now that the paper is finalised and published, it seemed like a good opportunity to share the code I use to implement the measure in R and show how to use it.
@@ -27,7 +33,7 @@ We argue that this approach reveals much more about the dynamics of a narrative 
 
 ## What does applying the measure look like in practice?
 
-The easiest way to explain how to use the measure is to work through a practical example. So, following the paper, I'll use the measure to calculate the narrative centrality of characters in _Star Wars: The Force Awakens_ (2015) using character interaction data I collected in my PhD research. _The Force Awakens_ is one of 30 films available in the [{movienetData}](https://github.com/pj398/movienetData) package, so it will make for an easy demonstration.
+The easiest way to explain how to use the measure is to work through a practical example. So, following the paper, I'll use the measure to calculate the narrative centrality of characters in _Star Wars: The Force Awakens_ (2015) using character interaction data I collected in my PhD research. _The Force Awakens_ is one of 30 films available in the [{movienetdata}](https://codeberg.org/pjphd/movienetdata) package, so it will make for an easy demonstration.
 
 #### Defining the function
 
@@ -112,9 +118,8 @@ So to get the centralities for _The Force Awakens_, we need to read in the film 
 
 
 ```r
-# install.packages("devtools")
-# devtools::install_github("pj398/movienetData")
-tfa <- movienetData::starwars_01
+# remotes::install_git("https://codeberg.org/pjphd/movienetdata.git")
+tfa <- movienetdata::starwars_tfa
 ```
 
 and, just to be clear, this event list is structured like so:
