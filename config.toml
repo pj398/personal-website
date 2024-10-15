@@ -32,6 +32,9 @@ feed_filenames = ["rss.xml"]
 #
 taxonomies = [{ name = "tags", rss = true, paginate_by = 5 }]
 
+# Keep dates as part of slugs
+slugify.paths_keep_dates = true
+
 # Configuration of the Markdown rendering
 [markdown]
 # When set to "true", all code blocks are highlighted.
