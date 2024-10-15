@@ -1,8 +1,9 @@
 +++
 draft = false
 date = 2020-03-03T15:28:00Z
-title = "movienetdata: A data package for character interactions in popular films."
-description = "Introduction to movienetdata, an R package containing movie character interaction network data"
+title = "movienetdata: A data package for character interactions in popular films"
+description = "Introduction to movienetdata, an R package containing movie character interaction network data."
+[taxonomies]
 tags = ["R", "networks", "movies"]
 +++
 

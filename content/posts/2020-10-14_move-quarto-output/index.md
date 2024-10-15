@@ -2,8 +2,9 @@
 draft = false
 date = 2024-10-14T14:00:00Z
 title = "Using project scripts to keep Quarto source and output files organised"
-description = "A quick walkthrough of using post-render scripts to fix Quarto's handling of notebook files contained in project subdirectories."
-tags = ["R", "quarto", "resources"]
+description = "A quick walkthrough of using post-render scripts to augment Quarto's handling of notebook files contained in project subdirectories."
+[taxonomies]
+tags = ["R", "quarto", "guides"]
 +++
 
 In this post I just want to share a quick tip for how to solve a very specific problem when working with [Quarto](https://quarto.org) projects: you want to keep your notebook source (.qmd) files and your notebook output (.pdf, .html etc) files separate, and you keep your source files in a subdirectory within the project. I'll talk a little bit about why that's a problem, and how to leverage one of Quarto's cool but lesser-known features to get around it.

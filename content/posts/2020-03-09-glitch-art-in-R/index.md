@@ -2,8 +2,9 @@
 draft = false
 date = 2020-03-09T23:24:18Z
 title = "Making glitch art in R"
-description = "An introduction to making glitch art in R using databending of image files"
-tags = ["R", "art", "creative"]
+description = "An introduction to making glitch art in R by databending image files."
+[taxonomies]
+tags = ["R", "creative coding", "guides"]
 +++
 
 ![](figs/ilona_crop.gif)

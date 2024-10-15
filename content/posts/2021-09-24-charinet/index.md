@@ -1,8 +1,9 @@
 +++
 draft = false
 date = 2021-09-24T10:18:00Z
-title = "charinet: A package for character interaction network analysis."
-description = "Introduction to charinet, an R package for analysing character interaction network data"
+title = "charinet: A package for character interaction network analysis"
+description = "Introduction to charinet, an R package for analysing character interaction network data."
+[taxonomies]
 tags = ["R", "networks", "movies"]
 +++
 
