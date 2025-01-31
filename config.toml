@@ -19,7 +19,7 @@ generate_feeds = true
 # The filenames to use for the feeds. Used as the template filenames, too.
 # Defaults to ["atom.xml"], which has a built-in template that renders an Atom 1.0 feed.
 # There is also a built-in template "rss.xml" that renders an RSS 2.0 feed.
-feed_filenames = ["rss.xml"]
+feed_filenames = ["atom.xml"]
 
 # The taxonomies to be rendered for the site and their configuration of the default languages
 # Example:
@@ -77,7 +77,7 @@ header_dark_color = "#313244"
 # The profile on home page.
 [extra.profile]
 name = "Pete Jones"
-bio = "I'm a social scientist sometimes studying fictional characters and sometimes studying real people. You can learn more about my qualifications, publications and research interests at the links below."
+bio = "I'm a social scientist sometimes studying fictional characters and sometimes studying real people. You can learn more about my CV, publications and research interests at the links below."
 # The URL of avatar.
 avatar_url = "img/pj_anim_2024_720px.png"
 # Invert color in dark mode.
@@ -112,6 +112,10 @@ url = "https://researchgate.net/profile/Pete_Jones6"
 [[extra.profile.social]]
 name = "linkedin"
 url = "https://www.linkedin.com/in/pete-jones-13b955105"
+
+[[extra.profile.social]]
+name = "rss"
+url = "$BASE_URL/atom.xml"
 
 # The top menu.
 [[extra.menu]]
