@@ -119,6 +119,10 @@ url = "$BASE_URL/atom.xml"
 
 # The top menu.
 [[extra.menu]]
+name = "Services"
+url = "$BASE_URL/services"
+
+[[extra.menu]]
 name = "Blog"
 url = "$BASE_URL/posts"
 
