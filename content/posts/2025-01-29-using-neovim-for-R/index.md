@@ -13,6 +13,18 @@ Unlike RStudio, Neovim isn't specialised for R, or for data science more general
 
 Here, I want to talk a little about my experience with making this shift and provide some advice in the hopes that somebody else might be able to make the transition relatively smoothly. It's a kind of "what I wish I knew when I started out" post.
 
+{% admonition(type="info", title="Update from May 2025") %}
+This post is only a few months old, but already some of the details I discuss here are a little outdated.
+Neovim version 0.11 introduced new built-in LSP configuration features which have had knock-on effects on the plugin ecosystem.
+In particular, the plugins [`nvim-lspconfig`](https://github.com/neovim/nvim-lspconfig) and [`mason-lspconfig`](https://github.com/mason-org/mason-lspconfig.nvim) have scaled back their role, and you can now configure LSP in Neovim without those plugins.
+
+Everything else in this post not related to LSP should remain valid.
+Personally, I've since migrated to use [`blink.cmp`](https://github.com/Saghen/blink.cmp) as my completion engine, but at the time of writing `kickstart` continues to ship with `nvim-cmp`, so this post remains in line with the `kickstart`-based approach.
+
+I will probably write an updated post at some point, but until then I recommend [this post](https://gpanders.com/blog/whats-new-in-neovim-0-11/) to learn more about the v0.11 changes.
+See also the note on [my personal Neovim config repo](https://codeberg.org/pjphd/neovim_config) about where the commit history becomes dependent on Neovim v0.11+ and deviates from this post.
+{% end %}
+
 ## Some preliminary notes
 
 Before we get stuck in, let's just do some quick expectation management, both for this post and for switching to Neovim.
