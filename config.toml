@@ -119,11 +119,11 @@ url = "$BASE_URL/atom.xml"
 
 # The top menu.
 [[extra.menu]]
-name = "Freelance work"
-url = "$BASE_URL/services"
+name = "/research_services"
+url = "$BASE_URL/research_services"
 
 [[extra.menu]]
-name = "Blog"
+name = "/posts"
 url = "$BASE_URL/posts"
 
 #[[extra.menu]]

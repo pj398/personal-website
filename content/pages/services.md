@@ -1,6 +1,6 @@
 +++
-title = "Freelance services I provide"
-path = "services"
+title = "Freelance research services"
+path = "research_services"
 template = "pages.html"
 +++
 
