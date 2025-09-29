@@ -114,16 +114,16 @@ name = "linkedin"
 url = "https://www.linkedin.com/in/pete-jones-13b955105"
 
 [[extra.profile.social]]
+name = "handshake"
+url = "$BASE_URL/research_services"
+
+[[extra.profile.social]]
 name = "rss"
 url = "$BASE_URL/atom.xml"
 
 # The top menu.
 [[extra.menu]]
-name = "/research_services"
-url = "$BASE_URL/research_services"
-
-[[extra.menu]]
-name = "/posts"
+name = "[Blog posts]"
 url = "$BASE_URL/posts"
 
 #[[extra.menu]]
