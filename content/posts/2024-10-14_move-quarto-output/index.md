@@ -121,7 +121,7 @@ The output from the script will be appended at the end of `quarto render`'s CLI 
 
 ![](img/console_screencast.gif)
 
-That's it! Let me know [@petejones@hcommons.social](https://hcommons.social/@petejones) if this helps or if there are even easier ways of dealing with this.
+That's it! Let me know [@pete@fedi.petejon.es](https://fedi.petejon.es/@pete) if this helps or if there are even easier ways of dealing with this.
 
 ***
 

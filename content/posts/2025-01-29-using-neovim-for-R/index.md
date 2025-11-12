@@ -209,7 +209,7 @@ If you want to take a look at my Neovim config files for inspiration or to try a
 
 If I didn't cover something in this post that you'd like to know more about, let me know and I can update it or maybe do a follow-up post.
 Likewise, if you know of a better or different way of doing something than the one I suggested in this post, I'd love to hear about it.
-The best way to get in touch is either on the [Fediverse](https://hcommons.social/@petejones) or via [email](mailto:pete@petejon.es).
+The best way to get in touch is either on the [Fediverse](https://fedi.petejon.es/@pete) or via [email](mailto:pete@petejon.es).
 
 ## Useful links and resources
 
